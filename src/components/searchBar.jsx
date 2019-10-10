@@ -4,7 +4,9 @@ export default class SearchBar extends React.Component {
   render() {
     return (
       <div className='container'>
-        <h1>Seach Bar</h1>
+       <label>Find Your City's Weather!</label>
+       <input placeholder='type in your city here'></input>
+       <button>Find the weather!</button>
       </div>
     );
   }
