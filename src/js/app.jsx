@@ -1,10 +1,17 @@
 import React from 'react';
+import CityInfo from '../components/cityInfo';
+import Header from '../components/header';
+import SearchBar from '../components/searchBar';
+import SearchHistory from '../components/searchHistory';
 
 export default class App extends React.Component {
   render() {
     return (
       <div className='container'>
-        <h1>Hello World!</h1>
+        <Header />
+        <CityInfo />
+        <SearchBar />
+        <SearchHistory />
       </div>
     );
   }
