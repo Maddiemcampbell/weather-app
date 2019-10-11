@@ -16,7 +16,7 @@ export default class App extends React.Component {
         </div>
         
         <div className="infoContainers" style={{ display: "flex", flexDirection: "row", flexBasis: 0}}>
-          <div className='col-12 md-6 mb-4'>
+          <div style={{flexBasis: 0}} className='col-12 md-6 mb-4'>
             <CityInfo />
           </div>
           <div className='col-12 md-6 mb-4'>
