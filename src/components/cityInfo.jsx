@@ -8,7 +8,7 @@ export default class CityInfo extends React.Component {
                         <h1 className='title'>City Information</h1>
                     </div>
                     <div className='list-group-item'>
-                        <div className='info'>Location: latitude, longitude.</div>
+                        <div className='info'>Location:</div>
                     </div>
                     <div className='list-group-item'>
                         <div className='info'>Humidity: </div>
