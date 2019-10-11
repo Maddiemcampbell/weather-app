@@ -14,12 +14,16 @@ export default class App extends React.Component {
         <div className='row'>
           <SearchBar />
         </div>
-        <div className='col-12 md-6 mb-4'>
-          <CityInfo />
+        
+        <div className="infoContainers" style={{ display: "flex", flexDirection: "row", flexBasis: 0}}>
+          <div className='col-12 md-6 mb-4'>
+            <CityInfo />
+          </div>
+          <div className='col-12 md-6 mb-4'>
+            <SearchHistory />
+          </div>
         </div>
-        <div className='col-12 md-6 mb-4'>
-          <SearchHistory />
-        </div>
+
       </div>
     );
   }

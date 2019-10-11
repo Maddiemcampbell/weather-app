@@ -3,33 +3,24 @@ import React from 'react';
 export default class SearchHistory extends React.Component {
     render() {
         return (
-            <div className='container'>
-                <h1>Search History</h1>
-                <br />
-                <div className='cityWrapper'>
-                    <h4>City</h4>
-                    <h5>Date: *Date Searched*</h5>
-                    <h5>Time: *Time Searched*</h5>
+            <div style={{marginTop: 20, marginRight: 0, width: 350, flexBasis: 0}} className="card">
+                <div className='info-card-title'>
+                    <h1 className='title'>Search Information</h1>
                 </div>
-                <div className='cityWrapper'>
-                    <h4>City</h4>
-                    <h5>Date: *Date Searched*</h5>
-                    <h5>Time: *Time Searched*</h5>
+                <div className='list-group-item'>
+                    <div className='info'>*City*</div>
                 </div>
-                <div className='cityWrapper'>
-                    <h4>City</h4>
-                    <h5>Date: *Date Searched*</h5>
-                    <h5>Time: *Time Searched*</h5>
+                <div className='list-group-item'>
+                    <div className='info'>*City*</div>
                 </div>
-                <div className='cityWrapper'>
-                    <h4>City</h4>
-                    <h5>Date: *Date Searched*</h5>
-                    <h5>Time: *Time Searched*</h5>
+                <div className='list-group-item'>
+                    <div className='info'>*City*</div>
                 </div>
-                <div className='cityWrapper'>
-                    <h4>City</h4>
-                    <h5>Date: *Date Searched*</h5>
-                    <h5>Time: *Time Searched*</h5>
+                <div className='list-group-item'>
+                    <div className='info'>*City*</div>
+                </div>
+                <div className='list-group-item'>
+                    <div className='info'>*City*</div>
                 </div>
             </div>
         );
