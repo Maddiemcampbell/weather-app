@@ -1,25 +1,31 @@
 import React from 'react';
+import { city } from './searchActions';
 
 export default class SearchBar extends React.Component {
   constructor(props){
     super(props);
 
     this.state = {
-      city: ''
+      citySearch: ''
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    console.log('constructor finished')
   }
 
   handleChange(e) {
-    this.setState({ city: e.target.value });
+    const { value } = e.target;
+    this.setState({citySearch: value});
   }
-
+  
   handleSubmit() {
-    console.log(this.state.city, "handle Submit function working")
+    const { dispatch } = this.props;
+    console.log(this.state.citySearch, "handle Submit function working")
+    dispatch(city(this.state.citySearch));
   }
 
   render() {
+    console.log("about to render component")
     return (
       <div className='container' style={{marginLeft: 10}}>
         <label style={{fontSize: 20}}>Find Your City's Weather!</label>
