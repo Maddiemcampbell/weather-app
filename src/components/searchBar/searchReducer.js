@@ -38,7 +38,7 @@ export default function searchReducer(state = defaultState, action) {
           pressure:payload.data.main.pressure,
         };
       }
-  
+ 
   }
 
   return state;
