@@ -9,6 +9,7 @@ const defaultState = {
     wind: '',
     pressure: '',
     citySearch: '',
+    history: [],
 };
 
 export default function searchReducer(state = defaultState, action) {
@@ -35,6 +36,10 @@ export default function searchReducer(state = defaultState, action) {
           highTemp: payload.data.main.temp_max,
           wind: payload.data.wind.speed,
           pressure:payload.data.main.pressure,
+          history: [...state.history,{
+            cities: payload.data.name,
+          }
+          ]
         };
       }
   }
