@@ -24,7 +24,6 @@ export default function searchReducer(state = defaultState, action) {
       };
 
       case 'GET_WEATHER_FULFILLED': {
-          console.log("payload name", payload.data.name)
         return {
           ...state,
           name: payload.data.name,

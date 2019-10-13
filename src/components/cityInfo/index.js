@@ -3,13 +3,13 @@ import CityInfo from './cityInfo';
 
 function mapStoreToProps(store) {
     return{
-        cityName: store.search.name,
+        name: store.search.name,
         lat: store.search.lat,
         lon: store.search.lon,
         temp:store.search.temp,
         pressure: store.search.pressure,
         humidity: store.search.humidity,
-        lowTemp: store.search.lowtemp,
+        lowTemp: store.search.lowTemp,
         highTemp: store.search.highTemp,
         wind: store.search.wind,
     };
