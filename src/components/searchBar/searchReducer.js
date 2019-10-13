@@ -14,8 +14,7 @@ const defaultState = {
 export default function searchReducer(state = defaultState, action) {
   const { type, payload } = action;
 
-  console.log(state)
-  console.log(payload)
+  console.log("payload", payload)
 
   switch (type) {
     case 'CITY':
@@ -24,7 +23,8 @@ export default function searchReducer(state = defaultState, action) {
         citySearch: payload.citySearch
       };
 
-      case 'GET_WEATHER': {
+      case 'GET_WEATHER_FULFILLED': {
+          console.log("payload name", payload.data.name)
         return {
           ...state,
           name: payload.data.name,
@@ -38,7 +38,6 @@ export default function searchReducer(state = defaultState, action) {
           pressure:payload.data.main.pressure,
         };
       }
- 
   }
 
   return state;

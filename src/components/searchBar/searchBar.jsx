@@ -21,7 +21,6 @@ export default class SearchBar extends React.Component {
     const { dispatch, citySearch } = this.props;
     
     dispatch(getWeather(citySearch));
-    console.log('handle Button working')
   }
 
 
