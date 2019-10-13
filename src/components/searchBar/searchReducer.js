@@ -14,9 +14,7 @@ const defaultState = {
 
 export default function searchReducer(state = defaultState, action) {
   const { type, payload } = action;
-
-  console.log("payload", payload)
-
+  
   switch (type) {
     case 'CITY':
       return {
@@ -38,6 +36,8 @@ export default function searchReducer(state = defaultState, action) {
           pressure:payload.data.main.pressure,
           history: [...state.history,{
             cities: payload.data.name,
+            date: new Date().toLocaleDateString(),
+            time: new Date().toLocaleTimeString()
           }
           ]
         };

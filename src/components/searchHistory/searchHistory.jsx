@@ -18,6 +18,8 @@ export default class SearchHistory extends React.Component {
                             history.map(items => (
                                 <li className='list-group-item card-body text-info' key={items.time}>
                                     {items.cities}
+                                    {items.date},
+                                    {items.time}
                                  </li>         
                          ))
                         }
